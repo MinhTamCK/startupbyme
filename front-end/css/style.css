@@ -7,3 +7,10 @@
 .text-center{
 	text-align: center;
 }
+#particles-js{
+    position: relative;
+}
+.particles-js-canvas-el{
+    position: absolute;
+    left: 0px;
+}
