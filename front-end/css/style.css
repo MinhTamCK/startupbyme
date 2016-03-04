@@ -22,9 +22,9 @@
 #stu-particles {
     position: absolute;
     top: 0px;
+    width: 100%;
 }
 
-#stu-particles canvas {
-    width: 100%;
-    height: 100%;
+#stu-particles .particles-js-canvas-el {
+    max-height: 500px;
 }
