@@ -1,16 +1,30 @@
-.navbar-fixed-top, .navbar-fixed-bottom{
-	position: initial;
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    position: initial;
 }
-.navbar{
-	margin-bottom: 0px;
+
+.navbar {
+    margin-bottom: 0px;
 }
-.text-center{
-	text-align: center;
+
+.text-center {
+    text-align: center;
 }
-#particles-js{
+
+.stu-slide {
     position: relative;
 }
-.particles-js-canvas-el{
+
+.stu-trianglify canvas {
+    width: 100%;
+}
+
+#stu-particles {
     position: absolute;
-    left: 0px;
+    top: 0px;
+}
+
+#stu-particles canvas {
+    width: 100%;
+    height: 100%;
 }
