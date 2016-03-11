@@ -8,27 +8,28 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Startupbyme</a>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Startupbyme</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </nav>
+        </nav>
+    </header>
     <div class="container-fruit">
         <section class="stu-slide">
             <!-- Add trianglify -->
@@ -42,57 +43,56 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <h1>About me</h1>
-                    <p>
-                        Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-                    </p>
-                    <p>
-                        Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-                    </p>
-                    <p>
-                        Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
-                    </p>
+                    <div class="col-lg-6 text-center">
+                        <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                        <h2>Production</h2>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                        <h2>Heading</h2>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- About -->
-        <!-- Company -->
-
-        <!-- / Company -->
+        <!--/ About -->
+        <!-- Contact -->
+        <section class="stu-area-contac">
+            <div class="stu-trianglify-contact"></div>
+            <div class="stu-contact-form">
+                <form action="contact" method="post" autocomplete="on">
+                    <div class="form-group block-control">
+                        <label class="col-sm-2 control-label" for="full-name">Full name</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" id="full-name" type="text" name="full-name" placeholder="Full name">
+                        </div>
+                    </div>
+                    <div class="form-group block-control">
+                        <label class="col-sm-2 control-label" for="email">Email</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" id="email" type="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group block-control">
+                        <label class="col-sm-2 control-label" for="message">Question</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="message" rows="5" placeholder="Describe yourself here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group block-control">
+                        <div class="col-sm-offset-2 col-sm-10 btn-send">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--/ Contact -->
+        <!-- Footer -->
     </div>
-    <!-- <div class="row">
-            <div class="col-lg-4 text-center">
-                <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div>
-            <div class="col-lg-4 text-center">
-                <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div>
-            <div class="col-lg-4 text-center">
-                <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-            </div>
-        </div> -->
-    <!-- <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE1MzFlNTUwNWU4IHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTUzMWU1NTA1ZTgiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
-            </div>
-        </div> -->
-    <!--   <footer>
-            <p class="pull-right"><a href="#">Back to top</a></p>
-            <p> © 2016 Nguyen Minh Tam <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-        </footer> -->
     <script src="../javascript/jquery-2.2.1.js"></script>
     <script src="../javascript/bootstrap.js"></script>
     <script src="../javascript/particles.js"></script>

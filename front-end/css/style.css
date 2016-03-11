@@ -7,10 +7,6 @@
     margin-bottom: 0px;
 }
 
-.text-center {
-    text-align: center;
-}
-
 .stu-slide {
     position: relative;
 }
@@ -27,4 +23,30 @@
 
 #stu-particles .particles-js-canvas-el {
     max-height: 500px;
+}
+
+.stu-trianglify-contact canvas {
+    width: 100%;
+}
+.stu-area-contac{
+    position: relative;
+}
+.stu-contact-form{
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+.stu-contact-form .block-control{
+    height: 35px;
+}
+
+.stu-contact-form form{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.stu-contact-form .btn-send{
+    margin-top: 2%;
 }
