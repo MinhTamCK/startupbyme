@@ -18,10 +18,10 @@ var pattern = Trianglify({
 });
 $('.stu-trianglify').append(pattern.canvas());
 // Contact
-var trianglifyContact = Trianglify({
-    width: window.innerWidth,
-    variance: "0",
-    seed: '4txiq',
-    x_colors: 'random'
-});
-$('.stu-trianglify-contact').append(trianglifyContact.canvas());
+// var trianglifyContact = Trianglify({
+//     width: window.innerWidth,
+//     variance: "0",
+//     seed: '4txiq',
+//     x_colors: 'random'
+// });
+// $('.stu-trianglify-contact').append(trianglifyContact.canvas());
