@@ -8,30 +8,30 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Startupbyme</a>
+<body ng-app="startupbyme">
+    <div class="container-fruit" ng-controller="StartUpByMeController as startupbyme">
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Startupbyme</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container-fruit">
+            </nav>
+        </header>
         <section class="stu-slide">
             <!-- Add trianglify -->
             <div class="stu-trianglify"></div>
@@ -53,91 +53,108 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- About -->
+        <section>
+            <h2><i class="fa fa-user"> About me</i></h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                        <h2>Production</h2>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                        <h2>Heading</h2>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ About -->
+        <!-- Social Network -->
+        <section class="stu-social">
+            <h2><i class="fa fa-share-square-o">  Social Network </i></h2>
+            <div class="container stu-font-social">
+                <div class="col-md-3">
+                    <i class="fa fa-facebook stu-font-face"></i>
+                    <p>Facebook friend</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-google-plus stu-font-google"></i>
+                    <p>Google+ view</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-twitter stu-font-twitter"></i>
+                    <p>Twitter followers</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-linkedin stu-font-linked"></i>
+                    <p>Linked connect</p>
+                </div>
+            </div>
+        </section>
+        <!--/ Social Network -->
+        <!-- Contact -->
+        <section class="stu-area-contac">
+            <div class="stu-trianglify-contact"></div>
+            <h2><i class="fa fa-phone">  Contact me</i></h2>
+            <div class="container stu-contact-form">
+                <form name="startupbyme.contactForm" method="post" autocomplete="off" novalidate>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <label class="sm-only" for="full-name"></label>
+                            <input class="form-control" id="full-name" type="text" name="name" placeholder="Name" required ng-model="formData.name" ng-pattern="">
+                            <div ng-messages="startupbyme.contactForm.name.$error" role="alert">
+                                <p ng-message="required">Please enter a value for this field.</p>
+                                <p ng-message="pattern">This field must be a valid your name.</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="sm-only" for="email"></label>
+                            <input class="form-control" id="email" type="email" name="email" placeholder="Email" ng-model="formData.email" required>
+                            <div ng-messages="startupbyme.contactForm.email.$error" role="alert">
+                                <p ng-message="required">Please enter a value for this field.</p>
+                                <p ng-message="email">This field must be a valid email address.</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="sm-only" for="phone"></label>
+                            <input class="form-control" id="phone" type="tel" name="phone" placeholder="Phone" ng-model="formData.phone" required>
+                            <div ng-messages="startupbyme.contactForm.phone.$error" role="alert">
+                                <p ng-message="required">Please enter a value for this field.</p>
+                                <p ng-message="tel">This field must be a valid email address.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <label class="sm-only" for="message"></label>
+                        <textarea class="form-control" id="message" name="message" rows="7" placeholder="Message..." ng-model="formData.message" required></textarea>
+                        <div ng-messages="startupbyme.contactForm.message.$error" role="alert">
+                            <p ng-message="required">Please enter a value for this field.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div class="btn-submit-width">
+                            <input class="btn btn-success btn-block" type="submit" name="send-info" value="Send" ng-disabled="startupbyme.contactForm.$invalid">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!--/ Contact -->
+        <!-- Footer -->
     </div>
-    </section>
-    <!-- About -->
-    <section>
-        <h2><i class="fa fa-user"> About me</i></h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-center">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Production</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                    <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                    <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--/ About -->
-    <!-- Social Network -->
-    <section class="stu-social">
-        <h2><i class="fa fa-share-square-o">  Social Network </i></h2>
-        <div class="container stu-font-social">
-            <div class="col-md-3">
-                <i class="fa fa-facebook stu-font-face"></i>
-                <p>Facebook friend</p>
-            </div>
-            <div class="col-md-3">
-                <i class="fa fa-google-plus stu-font-google"></i>
-                <p>Google+ view</p>
-            </div>
-            <div class="col-md-3">
-                <i class="fa fa-twitter stu-font-twitter"></i>
-                <p>Twitter followers</p>
-            </div>
-            <div class="col-md-3">
-                <i class="fa fa-linkedin stu-font-linked"></i>
-                <p>Linked connect</p>
-            </div>
-        </div>
-    </section>
-    <!--/ Social Network -->
-    <!-- Contact -->
-    <section class="stu-area-contac">
-        <div class="stu-trianglify-contact"></div>
-        <div class="stu-contact-form">
-            <form action="contact" method="post" autocomplete="on">
-                <div class="form-group block-control">
-                    <label class="col-sm-2 control-label" for="full-name">Full name</label>
-                    <div class="col-sm-10">
-                        <input class="form-control" id="full-name" type="text" name="full-name" placeholder="Full name">
-                    </div>
-                </div>
-                <div class="form-group block-control">
-                    <label class="col-sm-2 control-label" for="email">Email</label>
-                    <div class="col-sm-10">
-                        <input class="form-control" id="email" type="email" name="email" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group block-control">
-                    <label class="col-sm-2 control-label" for="message">Question</label>
-                    <div class="col-sm-10">
-                        <textarea class="form-control" id="message" rows="5" placeholder="Describe yourself here..."></textarea>
-                    </div>
-                </div>
-                <div class="form-group block-control">
-                    <div class="col-sm-offset-2 col-sm-10 btn-send">
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-    <!--/ Contact -->
-    <!-- Footer -->
-    </div>
-    <script src="../javascript/jquery-2.2.1.js"></script>
-    <script src="../javascript/bootstrap.js"></script>
-    <script src="../javascript/particles.js"></script>
-    <script src="../javascript/trianglify.js"></script>
-    <script src="../javascript/app.js"></script>
+    <script defer src="../javascript/jquery-2.2.1.js"></script>
+    <script src="../javascript/angular.js"></script>
+    <script defer src="../javascript/messages.js"></script>
+    <script defer src="../javascript/bootstrap.js"></script>
+    <script defer src="../javascript/particles.js"></script>
+    <script defer src="../javascript/trianglify.js"></script>
+    <script defer src="../javascript/app.js"></script>
 </body>
 
 </html>

@@ -33,7 +33,21 @@
     position: relative;
 }
 
-.stu-contact-form {
+.stu-contact-form input {
+    height: 50px;
+    font-size: 2rem;
+}
+
+.stu-contact-form textarea {
+    font-size: 2rem;
+}
+
+.stu-contact-form .btn-submit-width{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*.stu-contact-form {
     margin: 0 auto;
     width: 100%;
     position: absolute;
@@ -52,11 +66,10 @@
 
 .stu-contact-form .btn-send {
     margin-top: 2%;
-}
+}*/
 
 .hello-block {
     position: absolute;
-    ;
     top: 22%;
     left: 5%;
 }
@@ -94,12 +107,15 @@
 .stu-social .stu-font-social .stu-font-face:hover {
     color: #3a5795;
 }
+
 .stu-social .stu-font-social .stu-font-google:hover {
     color: #db4437;
 }
+
 .stu-social .stu-font-social .stu-font-twitter:hover {
     color: #1da1f2;
 }
+
 .stu-social .stu-font-social .stu-font-linked:hover {
     color: #1a85bc;
 }
