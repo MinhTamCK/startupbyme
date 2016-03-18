@@ -29,12 +29,15 @@
     width: 100%;
 }
 
-.stu-area-contac {
+.stu-contact {
     position: relative;
 }
 
+.stu-contact-form {
+    font-size: 2rem;
+}
+
 .stu-contact-form input {
-    height: 50px;
     font-size: 2rem;
 }
 
@@ -42,10 +45,15 @@
     font-size: 2rem;
 }
 
-.stu-contact-form .btn-submit-width{
+.stu-contact-form input {
+    height: 50px;
+}
+
+.stu-contact-form .btn-submit-width {
     width: 50%;
     margin: 0 auto;
 }
+
 
 /*.stu-contact-form {
     margin: 0 auto;
@@ -118,4 +126,51 @@
 
 .stu-social .stu-font-social .stu-font-linked:hover {
     color: #1a85bc;
+}
+
+.title-section {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.colored-line {
+    background: #008ed6;
+    margin: auto;
+    height: 2px;
+    width: 80px;
+    display: block;
+}
+
+.colored-line-full {
+    background: #008ed6;
+    margin: auto;
+    height: 2px;
+    display: block;
+}
+
+.study,
+.skill {
+    margin-top: 5%;
+}
+
+.study p {
+    font-size: 2.2rem;
+    color: #393b3a;
+    padding: 1.1em 0 0 0;
+}
+
+.skill-block {
+    width: 100%;
+    height: 50px;
+}
+
+.skill-block .progress-bar {
+    height: 15px;
+    border-radius: 6px
+}
+
+.stu-about, .stu-social, .stu-contact{
+    padding: 6rem .9375rem;
 }

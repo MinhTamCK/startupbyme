@@ -26,11 +26,3 @@ $('.stu-trianglify').append(pattern.canvas());
 // });
 // $('.stu-trianglify-contact').append(trianglifyContact.canvas());
 angular.module('startupbyme', ['ngMessages']);
-angular.module('startupbyme')
-	   .controller('StartUpByMeController', StartUpByMeController);
-
-function StartUpByMeController($scope) {
-	console.log($scope);
-	var vm = this;
-	$scope.abc = 'aaaaaa';
-};
