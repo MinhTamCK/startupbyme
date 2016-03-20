@@ -10,8 +10,8 @@
 
 <body ng-app="startupbyme">
     <div class="container-fruit">
-        <header>
-            <nav class="navbar navbar-inverse navbar-fixed-top">
+        <header id="home">
+            <nav class="navbar navbar-inverse navbar-fixed-top" data-top-navigation>
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -24,7 +24,7 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li class="active"><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
@@ -39,23 +39,18 @@
             <!-- Add particles -->
             <div id="stu-particles"></div>
             <!-- /Add particles -->
-            <div class="hello-block">
+            <div class="hello-center">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 header-me">
-                            <img class="img-circle" src="../image/stone.jpeg" alt="my avatar" width="140" height="140">
-                            <h2>Hello..<span>!</span></h2>
-                            <p>My name is Tam & i love code</p>
-                            <a href="#" title="contact me" role="button">
-                                <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
-                            </a>
-                        </div>
+                    <div class="hello-block">
+                        <img src="../image/my-avatar.png" alt="my avatar" width="30%" height="30%">
+                        <h2>Hello..<span>!</span></h2>
+                        <p>My name is Tam & i am front-end web developer</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- About -->
-        <section class="stu-about">
+        <section id="about">
             <div class="container">
                 <div>
                     <h2>About me</h2>
@@ -63,7 +58,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
-                        <h3>Study..!</h3>
+                        <h3>Study..<span class="exclamation">!</span></h3>
                         <div class="study">
                             <img class="img-responsive" src="../image/logo-khtn.png" alt="University of science" width="30%" height="50%">
                             <p>
@@ -72,7 +67,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
-                        <h3>Skills..!</h3>
+                        <h3>Skills..<span class="exclamation">!</span></h3>
                         <div class="skill">
                             <div class="skill-block">
                                 <h4>HTML</h4>
@@ -101,13 +96,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div>
+                        <h3>Technologies ..<span class="exclamation">!</span></h3>
+                    </div>
+                    <div class="col-md-12 technologies-image">
+                        <img src="../image/logo-technologies/angular.png" alt="" class="">
+                        <img src="../image/logo-technologies/jquery.png" alt="" class="">
+                        <img src="../image/logo-technologies/jade.png" alt="" class="">
+                        <img src="../image/logo-technologies/sass.png" alt="" class="">
+                        <img src="../image/logo-technologies/handlebars.png" alt="" class="">
+                        <img src="../image/logo-technologies/git.png" alt="" class="">
+                        <img src="../image/logo-technologies/gulp.png" alt="" class="">
+                    </div>
+                </div>
             </div>
         </section>
         <!--/ About -->
         <!-- Social Network -->
         <section class="stu-social">
             <div class="container stu-font-social">
-                <div class="title-section">
+                <div class="title-center">
                     <h2>Social Network</h2>
                     <div class="colored-line"></div>
                 </div>
@@ -131,14 +140,14 @@
         </section>
         <!--/ Social Network -->
         <!-- Contact -->
-        <section class="stu-contact">
+        <section id="contact">
             <div class="stu-trianglify-contact"></div>
-            <div class="container stu-contact-form">
-                <div class="title-section">
+            <div class="container">
+                <div class="title-center">
                     <h2>Contact me</h2>
                     <div class="colored-line"></div>
                 </div>
-                <form action="/contact" name="contactForm" method="post" autocomplete="off" novalidate>
+                <form class="stu-contact-form" action="/contact" name="contactForm" method="post" autocomplete="off" novalidate>
                     <div class="col-md-6 col-sm-12">
                         <div class="form-group" ng-class="{'has-error' : contactForm.name.$invalid && contactForm.name.$dirty}">
                             <label class="sm-only" for="full-name"></label>
@@ -167,7 +176,7 @@
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <label class="sm-only" for="message"></label>
-                        <textarea class="form-control" id="message" name="message" rows="7" placeholder="Message..." required></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message..." required></textarea>
                     </div>
                     <div class="col-md-12 text-center">
                         <div class="btn-submit-width">

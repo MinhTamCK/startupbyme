@@ -29,20 +29,20 @@
     width: 100%;
 }
 
-.stu-contact {
+#contact {
     position: relative;
 }
 
 .stu-contact-form {
-    font-size: 2rem;
+    font-size: 1.5em;
 }
 
 .stu-contact-form input {
-    font-size: 2rem;
+    font-size: 1.5em;
 }
 
 .stu-contact-form textarea {
-    font-size: 2rem;
+    font-size: 1.5em;
 }
 
 .stu-contact-form input {
@@ -52,6 +52,10 @@
 .stu-contact-form .btn-submit-width {
     width: 50%;
     margin: 0 auto;
+}
+
+.btn-submit-width input {
+    line-height: 0.1em;
 }
 
 
@@ -76,13 +80,37 @@
     margin-top: 2%;
 }*/
 
-.hello-block {
+.hello-center {
+    width: 100%;
     position: absolute;
-    top: 22%;
-    left: 5%;
+    top: 10%;
 }
 
-.hello-block .header-me {
+.hello-block {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.hello-block h2 {
+    font-family: 'Nunito-Bold';
+    font-size: 5em;
+    text-transform: capitalize;
+    color: #393b3a;
+}
+
+.hello-block h2 span {
+    color: #00cfbd;
+}
+
+.hello-block p {
+    color: #393b3a;
+    font-size: 2em;
+}
+
+
+/*.hello-block .header-me {
     text-align: center;
 }
 
@@ -93,10 +121,7 @@
     color: #393b3a;
 }
 
-.hello-block .header-me h2 span {
-    color: #00cfbd;
-    font-size: 1em;
-}
+
 
 .hello-block .header-me p {
     font-family: 'Nunito-Bold';
@@ -106,7 +131,7 @@
 
 .hello-block .header-me .glyphicon-triangle-bottom {
     font-size: 7em;
-}
+}*/
 
 .stu-social .stu-font-social .fa {
     font-size: 7em;
@@ -128,11 +153,30 @@
     color: #1a85bc;
 }
 
-.title-section {
+.title-center {
     width: 50%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 5rem;
+}
+
+h2 {
+    font-family: 'Nunito-Bold';
+    font-size: 3.5em;
+    text-transform: capitalize;
+    color: #393b3a;
+}
+
+h3 {
+    font-family: 'Nunito-Bold';
+    font-size: 2.5em;
+    text-transform: capitalize;
+    color: #393b3a;
+}
+
+.exclamation {
+    color: #00cfbd;
+    font-size: 0.9em;
 }
 
 .colored-line {
@@ -156,7 +200,7 @@
 }
 
 .study p {
-    font-size: 2.2rem;
+    font-size: 1.3em;
     color: #393b3a;
     padding: 1.1em 0 0 0;
 }
@@ -171,6 +215,61 @@
     border-radius: 6px
 }
 
-.stu-about, .stu-social, .stu-contact{
+#about,
+.stu-social,
+#contact {
     padding: 6rem .9375rem;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    z-index: 1;
+}
+
+.technologies-image {
+    background: black;
+}
+
+.technologies-image img {
+    width: 200px;
+    height: 60px;
+    margin: 0.75rem;
+    display: inline-block;
+}
+
+.technologies-image img:hover {
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/* Let's get this party started */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    /*-webkit-border-radius: 10px;
+    border-radius: 10px;*/
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    /*   -webkit-border-radius: 10px;
+    border-radius: 10px;*/
+    background: #293D93;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 0, 0, 0.4);
 }
