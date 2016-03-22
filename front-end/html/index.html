@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>startupbume</title>
@@ -43,7 +43,7 @@
                 <div class="container">
                     <div class="hello-block">
                         <img src="../image/my-avatar.png" alt="my avatar" width="30%" height="30%">
-                        <h2>Hello..<span>!</span></h2>
+                        <h1>Hello..<span>!</span></h1>
                         <p>My name is Tam & i am front-end web developer</p>
                     </div>
                 </div>
@@ -101,13 +101,13 @@
                         <h3>Technologies ..<span class="exclamation">!</span></h3>
                     </div>
                     <div class="col-md-12 technologies-image">
-                        <img src="../image/logo-technologies/angular.png" alt="" class="">
-                        <img src="../image/logo-technologies/jquery.png" alt="" class="">
-                        <img src="../image/logo-technologies/jade.png" alt="" class="">
-                        <img src="../image/logo-technologies/sass.png" alt="" class="">
-                        <img src="../image/logo-technologies/handlebars.png" alt="" class="">
-                        <img src="../image/logo-technologies/git.png" alt="" class="">
-                        <img src="../image/logo-technologies/gulp.png" alt="" class="">
+                        <img src="../image/logo-technologies/angular.png" alt="angular" class="">
+                        <img src="../image/logo-technologies/jquery.png" alt="jquery" class="">
+                        <img src="../image/logo-technologies/jade.png" alt="jade" class="">
+                        <img src="../image/logo-technologies/sass.png" alt="sass" class="">
+                        <img src="../image/logo-technologies/handlebars.png" alt="handlebars" class="">
+                        <img src="../image/logo-technologies/git.png" alt="git" class="">
+                        <img src="../image/logo-technologies/gulp.png" alt="gulp" class="">
                     </div>
                 </div>
             </div>
@@ -141,49 +141,50 @@
         <!--/ Social Network -->
         <!-- Contact -->
         <section id="contact">
-            <div class="stu-trianglify-contact"></div>
             <div class="container">
                 <div class="title-center">
                     <h2>Contact me</h2>
                     <div class="colored-line"></div>
                 </div>
-                <form class="stu-contact-form" action="/contact" name="contactForm" method="post" autocomplete="off" novalidate>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="form-group" ng-class="{'has-error' : contactForm.name.$invalid && contactForm.name.$dirty}">
-                            <label class="sm-only" for="full-name"></label>
-                            <input class="form-control" id="full-name" type="text" name="name" placeholder="Name" required ng-model="formData.name" ng-pattern="">
-                            <div ng-messages="contactForm.name.$error" ng-show="contactForm.name.$dirty" role="alert">
-                                <p class="help-block" ng-message="required">Please enter a value for this field.</p>
-                                <p class="help-block" ng-message="pattern">This field must be a valid your name.</p>
+                <div class="row stu-contact-form">
+                    <form action="/contact" name="contactForm" method="post" autocomplete="off" novalidate>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="form-group" ng-class="{'has-error' : contactForm.name.$invalid && contactForm.name.$dirty}">
+                                <label class="sr-only" for="full-name"> full name </label>
+                                <input class="form-control" id="full-name" type="text" name="name" placeholder="Name" required ng-model="formData.name" ng-pattern="">
+                                <div ng-messages="contactForm.name.$error" ng-show="contactForm.name.$dirty" role="alert">
+                                    <p class="help-block" ng-message="required">Please enter a value for this field.</p>
+                                    <p class="help-block" ng-message="pattern">This field must be a valid your name.</p>
+                                </div>
+                            </div>
+                            <div class="form-group" ng-class="{'has-error' : contactForm.email.$invalid && contactForm.email.$dirty}">
+                                <label class="sr-only" for="email"> email </label>
+                                <input class="form-control" id="email" type="email" name="email" placeholder="Email" ng-model="formData.email" required>
+                                <div ng-messages="contactForm.email.$error" ng-show="contactForm.email.$dirty" role="alert">
+                                    <p class="help-block" ng-message="required">Please enter a value for this field.</p>
+                                    <p class="help-block" ng-message="email">This field must be a valid email address.</p>
+                                </div>
+                            </div>
+                            <div class="form-group" ng-class="{'has-error' : contactForm.phone.$invalid && contactForm.phone.$dirty}">
+                                <label class="sr-only" for="phone"> phone </label>
+                                <input class="form-control" id="phone" type="tel" name="phone" placeholder="Phone" ng-model="formData.phone" required>
+                                <div ng-messages="contactForm.phone.$error" ng-show="contactForm.phone.$dirty" role="alert">
+                                    <p class="help-block" ng-message="required">Please enter a value for this field.</p>
+                                    <p class="help-block" ng-message="tel">This field must be a valid email address.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group" ng-class="{'has-error' : contactForm.email.$invalid && contactForm.email.$dirty}">
-                            <label class="sm-only" for="email"></label>
-                            <input class="form-control" id="email" type="email" name="email" placeholder="Email" ng-model="formData.email" required>
-                            <div ng-messages="contactForm.email.$error" ng-show="contactForm.email.$dirty" role="alert">
-                                <p class="help-block" ng-message="required">Please enter a value for this field.</p>
-                                <p class="help-block" ng-message="email">This field must be a valid email address.</p>
+                        <div class="col-md-6 col-sm-12">
+                            <label class="sr-only" for="message"> message </label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message..." required></textarea>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <div class="btn-submit-width">
+                                <input class="btn btn-success btn-block" type="submit" name="send-info" value="Send" ng-disabled="contactForm.$invalid">
                             </div>
                         </div>
-                        <div class="form-group" ng-class="{'has-error' : contactForm.phone.$invalid && contactForm.phone.$dirty}">
-                            <label class="sm-only" for="phone"></label>
-                            <input class="form-control" id="phone" type="tel" name="phone" placeholder="Phone" ng-model="formData.phone" required>
-                            <div ng-messages="contactForm.phone.$error" ng-show="contactForm.phone.$dirty" role="alert">
-                                <p class="help-block" ng-message="required">Please enter a value for this field.</p>
-                                <p class="help-block" ng-message="tel">This field must be a valid email address.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <label class="sm-only" for="message"></label>
-                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message..." required></textarea>
-                    </div>
-                    <div class="col-md-12 text-center">
-                        <div class="btn-submit-width">
-                            <input class="btn btn-success btn-block" type="submit" name="send-info" value="Send" ng-disabled="contactForm.$invalid">
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </section>
         <!--/ Contact -->

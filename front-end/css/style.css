@@ -35,6 +35,12 @@
 
 .stu-contact-form {
     font-size: 1.5em;
+    background-image: url(../image/contact-backgroup.png);
+    padding: 3rem 1.5rem;
+}
+
+.stu-contact-form .form-group {
+    margin-bottom: 45px;
 }
 
 .stu-contact-form input {
@@ -218,7 +224,7 @@ h3 {
 #about,
 .stu-social,
 #contact {
-    padding: 6rem .9375rem;
+    padding: 2rem .9375rem;
 }
 
 .navbar-fixed-top {
@@ -227,7 +233,8 @@ h3 {
 }
 
 .technologies-image {
-    background: black;
+    background-image: url(../image/Technologies-backgroud.png);
+    padding: 3rem;
 }
 
 .technologies-image img {
